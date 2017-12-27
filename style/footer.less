@@ -1,28 +1,129 @@
-.sedona-index{
-    z-index:999;
+footer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
     margin: 0 auto;
-    max-width: 1280px;
-    min-width: 380px;
-    background-color: coral;
+    background-color: red;
+    min-width: 320px;
+    width: 100%;
+
 }
 
-header{
-    z-index: -999;
-   background: url(/img/background-photo.png) no-repeat ;
-    background-size: cover;
-    min-width: 320px;
-    max-width: 800px;
-    margin: 0 auto;
-    .header-angel{
-        margin: 0 auto;
-    min-width: 320px;
-    max-width: 800px; 
+.footer__wrap {
+    background-color: white;
+    min-height: 120px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+
+}
+
+
+.visitsedona__text {
+    font-weight: 700;
+    width: 136px;
+    display: block;
+    font-family: "PT Sans";
+    font-size: 21px;
+    color: black;
+    text-transform: uppercase;
+
+}
+
+.soc {
+    .flex-row;
+    width: 151px;
+    font-style: italic;
+    .soc__cont {
+        width: 46px;
+        height: 46px;
+        background-color: @blue;
+        .flex-row;
+        justify-content: center;
+        align-items: center;
+    }
+    .soc__img {}
+
+}
+
+.vebsite {
+
+    width: 190px;
+    .flex-row;
+    .vebsite__text {
+        font-family: "PT Sans";
+        font-size: 14px;
+        text-transform: uppercase;
     }
 }
 
 
-@media(max-width:501px){
-    .sedona-index{
-        background-color:olivedrab;
+
+
+
+@media (max-width:500px) {
+    .footer__wrap {
+
+        .flex-col;
+        justify-content: space-around;
+        height: 220px;
     }
+
 }
+
+
+
+.flex-row {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-col {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@blue: #81b3d2;
+//.sedona-index{
+//    z-index:999;
+//    margin: 0 auto;
+//    max-width: 1280px;
+//    min-width: 380px;
+//    background-color: coral;
+//}
+//
+//header{
+//    z-index: -999;
+//   background: url(/img/background-photo.png) no-repeat ;
+//    background-size: cover;
+//    min-width: 320px;
+//    max-width: 800px;
+//    margin: 0 auto;
+//    .header-angel{
+//        margin: 0 auto;
+//    min-width: 320px;
+//    max-width: 800px; 
+//    }
+//}
+//
+//
+//@media(max-width:501px){
+//    .sedona-index{
+//        background-color:olivedrab;
+//    }
+//}
