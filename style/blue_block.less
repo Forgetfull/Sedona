@@ -1,0 +1,33 @@
+.blue-block{
+//    min-width: 320px;
+//    max-width: 400px;
+    width:40%;
+    height: 256px;
+    background-color: @blue;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    display: flex;
+    color: white;
+        h3{
+        font-size: 21px;
+font-weight: 700;
+            width: 257px;
+            text-align: center;
+    }
+    p{
+        font-family: "PT Sans";
+font-size: 14px;
+        text-align: center;
+        width: 257px;
+        
+    }
+}
+
+@blue:#81b3d2;
+
+@media all and (max-width:500px) {
+    .blue-block{
+        width: 100%;
+    }
+}
