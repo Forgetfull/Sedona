@@ -1,0 +1,17 @@
+{
+  "name": "stand-project",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "ilia"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Forgetfull/stand",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
