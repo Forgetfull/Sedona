@@ -1,0 +1,231 @@
+
+//✝
+body {
+    background: linear-gradient(grey, white) no-repeat;
+    background-size: cover;
+}
+.sedona-index {
+    flex-direction: column;
+    display: flex;
+    z-index: 999;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 380px;
+}
+//   сокрытие гамбургеной кнопки
+.burger,
+.btn {
+    display: none;
+}
+// навигация
+.nav-menu {
+    min-width: 320px;
+    max-width: 1200px;
+    .flex-row;
+    background-color: white;
+//    лишки
+    .nav-menu__points {
+        width: 153px;
+        height: 56px;
+        list-style-type: none;
+        .flex-row;
+        justify-content: center;
+//        ссылки
+        .nav-menu__link {
+            color: black;
+            font-family: "PT Sans";
+            font-size: 14px;
+            text-decoration: none;
+        }
+    } //    оформление скрытого li
+    .nav-menu__points_logo2 {
+        display: none;
+    }
+    #logo2 {
+        background-color: white;
+
+    }
+}
+header {
+         
+    z-index: -999;
+    background: url(../img/background-photo.png) no-repeat;
+    background-size: cover;
+    min-width: 320px;
+    max-width: 1200px;
+    .container-image-text {
+        min-width: 320px;
+        min-height: 295px;
+        margin: 76px auto;
+        .flex-col;
+        //        контенеры для изображений
+        .welcome {
+            max-width: 256px;
+            min-width: 196px;
+            height: 86px;
+        }
+        .sedona {
+            height: 78px;
+            max-width: 458px;
+            min-width: 200px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        .because {
+            height: 80px;
+            max-width: 295px;
+            min-width: 197px;
+        }
+        //        изображения
+        .welcome_img {
+            height: auto;
+            width: 100%;
+        }
+        .sedona_img {
+            height: auto;
+            width: 100%;
+        }
+        .because_img {
+            height: auto;
+            width: 100%;
+        }
+    } //    дек крылья
+    .header-angel {
+        width: 100.1%;
+
+    }
+}
+@media(max-width:768px) {
+
+    .container-image-text__img_welcome {
+        width: 256px;
+        height: 86px;
+    }
+    .container-image-text__img_sedona {
+        width: 458px;
+        height: 78px;
+    }
+    .container-image-text__img_because {
+        width: 295px;
+        height: 80px;
+    }
+    
+}
+@media(max-width:650px) {
+    //    промежуточное значение текста для нав меню
+        body {
+           
+            .nav-menu {
+
+                .nav-menu__points {
+
+                    .nav-menu__link {
+                        color: black;
+                        font-family: "PT Sans";
+                        font-size: 12px;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+
+        }
+    }
+@media all and (max-width:500px) {
+    body {
+   
+    }
+    .container-image-text__img_welcome {
+        width: 196px;
+        height: 86px;
+    }
+    .container-image-text__img_sedona {
+        width: 320px;
+        height: 78px;
+    }
+    .container-image-text__img_because {
+        width: 197px;
+        height: 80px;
+    } //    мобильна менюшка
+    .nav-menu {
+
+        .flex-col;
+        background-color: white;
+        .nav-menu__points {
+            background-color: #81b3d2;
+            width: 100%;
+            height: 56px;
+            list-style-type: none;
+            border-bottom: 1px solid #678fa8;
+            .flex-row;
+            justify-content: center;
+            .krest {
+                position: absolute;
+                margin-left: 150px;
+            }
+            .nav-menu__link {
+                color: white;
+                font-family: "PT Sans";
+                font-size: 14px;
+                text-decoration: none;
+            }
+        }
+        .nav-menu__points_logo {
+            margin-top: 6px;
+            background-color: white;
+            order: 5;
+            border-bottom: none;
+            .nav-menu__link_logo {}
+        } //        исчезновение лого
+        .nav-menu__points_logo {
+            display: none;
+        }
+    } //      появление лого
+    .nav-menu__points_logo2 {
+      
+        display: block;
+        img {
+
+            margin-bottom: -14px;
+        }
+    } //скрытие меню checkbox'ом
+    .btn:checked ~ .nav-menu {
+        display: none;
+        .burger-img {
+            background-image: url(../img/burger.png);
+        }
+    }
+    .burger {
+        background-color: white;
+        display: block;
+        .burger-img {
+            display: block;
+            width: 23px;
+            height: 20px;
+            margin: 0 auto;
+            background-image: url(../img/burger.png);
+        }
+    }
+
+}
+.flex-row {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-col {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+@blue: #81b3d2;
+
