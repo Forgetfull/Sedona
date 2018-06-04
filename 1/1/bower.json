@@ -1,0 +1,17 @@
+{
+  "name": "ilia",
+  "description": "no",
+  "main": "index.js",
+  "authors": [
+    "ilia"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
